@@ -26,7 +26,5 @@ CREATE TABLE tag (
 CREATE TABLE productTag (
   id INT NOT NULL,
   product_id VARCHAR(30) NOT NULL,
-  room_number INT NOT NULL,
-  available BOOLEAN NOT NULL,
-  date_updated DATETIME NOT NULL
+  tag_id INT NOT NULL
 );
