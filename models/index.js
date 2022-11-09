@@ -18,7 +18,8 @@ module.exports = {
   Tag,
   ProductTag,
 };
-Reader.hasOne(LibraryCard, {
+
+product.belongs(Category, {
   foreignKey: 'reader_id',
   onDelete: 'CASCADE',
 });
