@@ -10,20 +10,20 @@ CREATE TABLE category (
 );
 
 CREATE TABLE product (
-  id INT NOT NULL,
-  product_name STRING VARCHAR(30) NOT NULL,
-  price VARCHAR(30) NOT NULL,
-  stock BOOLEAN NOT NULL,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_name STRING NOT NULL,
+  price DECIMAL BOOLEAN NOT NULL,
+  stock INT BOOLEAN NOT NULL,
   category_id INT
 );
 
 CREATE TABLE tag (
-  id INT NOT NULL,
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   tag_name STRING
 );
 
 CREATE TABLE productTag (
-  id INT NOT NULL,
-  product_id VARCHAR(30) NOT NULL,
-  tag_id INT NOT NULL
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_id INT,
+  tag_id INT 
 );
