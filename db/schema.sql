@@ -5,9 +5,8 @@ DROP DATABASE IF EXISTS ecommerce_db;
 CREATE DATABASE ecommerce_db;
 
 CREATE TABLE category (
-  id INT NOT NULL,
-  category_name STRING NOT NULL,
-   PRIMARY KEY (id)
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  category_name STRING NOT NULL
 );
 
 CREATE TABLE product (
