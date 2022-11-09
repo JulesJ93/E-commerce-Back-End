@@ -18,15 +18,15 @@ module.exports = {
   Tag,
   ProductTag,
 };
-
+// Products belongsTo Category
 product.belongs(Category, {
   foreignKey: 'category_id',
 });
-
+// Categories have many Products
 Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
-
+// Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   foreignKey: 'reader_id',
   through:ProductTag,
