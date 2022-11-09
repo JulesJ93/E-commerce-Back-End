@@ -8,8 +8,10 @@ router.get('/', (req, res) => {
   // GET all cards
 router.get('/', async (req, res) => {
   Category.findAll({
-      include: [ model: Product attributes:],
-    });
+      include: { model: Product,
+      attributes:['id','product_name','price','stock','category_id'],
+      },
+    })
     res.status(200).json(libraryCardData);
   } catch (err) {
     res.status(500).json(err);
