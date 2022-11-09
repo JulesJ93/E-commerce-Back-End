@@ -12,10 +12,9 @@ CREATE TABLE category (
 CREATE TABLE product (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   product_name VARCHAR(30) NOT NULL,
-  price DECIMAL BOOLEAN NOT NULL,
-  stock INT BOOLEAN NOT NULL,
-  category_id INT,
-  REFERENCES category(id)
+  price DECIMAL NOT NULL,
+  stock INT NOT NULL,
+  category_id INT REFERENCES categorys(id)
 );
 
 CREATE TABLE tag (
@@ -26,6 +25,5 @@ CREATE TABLE tag (
 CREATE TABLE productTag (
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   product_id INT REFERENCES product(id),
-  tag_id INT,
-  REFERENCES tag(id) 
+  tag_id INT REFERENCES tag(id) 
 );
