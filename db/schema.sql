@@ -11,7 +11,7 @@ CREATE TABLE category (
 
 CREATE TABLE product (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  product_name STRING NOT NULL,
+  product_name VARCHAR(30) NOT NULL,
   price DECIMAL BOOLEAN NOT NULL,
   stock INT BOOLEAN NOT NULL,
   category_id INT,
@@ -20,7 +20,7 @@ CREATE TABLE product (
 
 CREATE TABLE tag (
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  tag_name STRING
+  tag_name VARCHAR(30)
 );
 
 CREATE TABLE productTag (
