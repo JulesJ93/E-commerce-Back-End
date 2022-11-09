@@ -6,7 +6,8 @@ CREATE DATABASE ecommerce_db;
 
 CREATE TABLE category (
   id INT NOT NULL,
-  category_name STRING NOT NULL
+  category_name STRING NOT NULL,
+   PRIMARY KEY (id)
 );
 
 CREATE TABLE product (
