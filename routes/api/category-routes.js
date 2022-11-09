@@ -7,9 +7,8 @@ router.get('/', (req, res) => {
   // find all categories
   // GET all cards
 router.get('/', async (req, res) => {
-  try {
-    const libraryCardData = await LibraryCard.findAll({
-      include: [{ model: Reader }],
+  Category.findAll({
+      include: [ model: Product attributes:],
     });
     res.status(200).json(libraryCardData);
   } catch (err) {
