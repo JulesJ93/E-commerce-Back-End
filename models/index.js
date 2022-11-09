@@ -27,8 +27,11 @@ Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
 
-Book.belongsTo(Reader, {
+Product.belongsToMany(Tag, {
   foreignKey: 'reader_id',
+  through:ProductTag,
+ // as: "product_tag"
+  foreignKey: 'product_id',
 });
 
 LibraryCard.belongsTo(Reader, {
