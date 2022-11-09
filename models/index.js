@@ -20,13 +20,11 @@ module.exports = {
 };
 
 product.belongs(Category, {
-  foreignKey: 'reader_id',
-  onDelete: 'CASCADE',
+  foreignKey: 'category_id',
 });
 
-Reader.hasMany(Book, {
-  foreignKey: 'reader_id',
-  onDelete: 'CASCADE',
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
 });
 
 Book.belongsTo(Reader, {
