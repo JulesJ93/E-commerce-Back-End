@@ -14,7 +14,7 @@ CREATE TABLE product (
   product_name STRING VARCHAR(30) NOT NULL,
   price VARCHAR(30) NOT NULL,
   stock BOOLEAN NOT NULL,
-  category_id DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+  category_id INT
 );
 
 CREATE TABLE tag (
