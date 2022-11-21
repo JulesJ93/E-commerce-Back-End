@@ -3,7 +3,6 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/', (req, res) => {
   // find all categories
   // GET all cards
 router.get('/', async (req, res) => {
@@ -20,6 +19,7 @@ router.get('/', async (req, res) => {
       res.json(dbCategoryData);
     })
     .catch((err) => {
+      console.log(err);
     res.status(500).json(err);
   });
 });
