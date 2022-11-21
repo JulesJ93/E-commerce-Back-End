@@ -21,19 +21,6 @@ THEN I am able to successfully create, update, and delete data in my database
 Description
 This project serves as a back end for e-commerce website by using a working Express API , MySQL2 npm packages and Sequelize.
 
-Table of Contents
-Installation
-
-Usage
-
-License
-
-Contribute
-
-Tests
-
-Questions
-
 Installation
 Clone the code into your terminal. Change the env.EXAMPLE file to .env file. After entering your username and password on .env file run npm i , npm start and test the program by entering Get, Post, Put, and Delete in Insomnia .
 
